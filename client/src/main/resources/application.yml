@@ -6,10 +6,11 @@ spring:
     name: SERVICE-CLIENT
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/clientservicedb?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3307/clientservicedb?createDatabaseIfNotExist=true
     username: "root"
     password: ""
+
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
     show-sql: true
